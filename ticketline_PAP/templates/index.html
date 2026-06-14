@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>Olá! Precisas de uma mãozinha?</h1>
+    <p>Bem-vindo ao Ticketline! Estamos aqui para te ajudar a resolver qualquer problema de forma rápida e com um sorriso. O teu suporte, sempre perto de ti.</p>
+    <div class="hero-actions">
+        <a href="{{ url_for('login_cliente') }}" class="btn btn-primary"><i class="fa-solid fa-heart"></i> Quero Ajuda</a>
+        <a href="{{ url_for('login_helpdesk') }}" class="btn btn-outline"><i class="fa-solid fa-hands-helping"></i> Sou Agente</a>
+    </div>
+
+    <div style="margin-top: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--glass-border); text-align: left; max-width: 800px; margin-left: auto; margin-right: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        <h2 style="color: var(--primary-glow); margin-bottom: 1rem; font-size: 1.8rem;"><i class="fa-solid fa-building"></i> Sobre a Empresa</h2>
+        <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; text-align: left; margin: 0;">A <strong>Ticketline</strong>, inspirada nas melhores práticas da Teleperformance, é uma plataforma desenhada para conectar clientes que precisam de assistência com agentes qualificados, garantindo um acompanhamento de excelência, humano e eficaz em todos os passos.</p>
+    </div>
+</div>
+{% endblock %}

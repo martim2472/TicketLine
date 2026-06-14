@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="glass-card" style="border-color: rgba(142, 45, 226, 0.3); box-shadow: 0 8px 32px rgba(142, 45, 226, 0.1);">
+    <h2><i class="fa-solid fa-headset" style="color: var(--accent-purple);"></i> Portal Helpdesk</h2>
+    <p style="color: var(--text-muted); margin-bottom: 2rem;">Acesso exclusivo a Agentes Teleperformance.</p>
+    
+    <form method="POST" action="{{ url_for('login_helpdesk') }}">
+        <div class="form-group">
+            <label for="email">Email Corporativo</label>
+            <input type="email" id="email" name="email" required placeholder="agente@teleperformance.com">
+        </div>
+        <div class="form-group">
+            <label for="password">Palavra-passe</label>
+            <input type="password" id="password" name="password" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit" style="background: linear-gradient(45deg, var(--accent-purple), #c471ed); box-shadow: 0 4px 15px rgba(142, 45, 226, 0.3);">Entrar no Sistema</button>
+    </form>
+</div>
+{% endblock %}
